@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image:url(../Images/background.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image
+{
+    opacity: 0.2;
+}
+
+
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(64, 64, 64);
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.top
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+img
+{
+    max-width: 700px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 4px lightgray;
+}
+
+/* Style pour centrer la liste des caractéristiques d'astéroïdes */
+.planet-info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+}
+
+
+
+.asteroid-list {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.asteroid-list p {
+    margin: 0.5em 0;
+    text-align: left;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.planet-description,
+li,
+ul
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+    
+}
+.planet-gallery,
+.planet-exploration
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 2.0;
+}
+
+.gallery-item p 
+{
+    font-size: large;          
+}
+
+#asteroidesImage 
+{
+    width: 500px;
+    height: auto;
+}
+
+
+
+nav .onglets a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav .onglets a:hover
+{
+    color: grey;
+}
+
+h3
+{
+    color: white;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+   
+    width: 100%;
+    box-sizing: content-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1
+{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    color: white;
+    
+}
+
+header h2
+{
+    margin-top: -20px;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(64, 64, 64);
+    color: white;
+}
+
+.compteur {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: inline-block !important;
+    border: 2px solid rgb(16, 46, 80);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    position: relative;
+    min-width: 300px;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+header h3
+{
+    font-family: 'Montserrat';
+    font-size: medium;
+    color: white;
+}
+
+.titre
+{
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+.history-text 
+{
+    font-size:large;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    line-height: 2.0;
+}
+
+header h4
+{
+    font-family: 'Montserrat';
+    font-size: 35px;
+    color: white;
+}
+
+header button h3
+{
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+li, p, h2, h3, h4
+{
+    color: white;
+}
+
+.main .contenu .carte .gauche
+{
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(64, 64, 64, 0.8);
+    color: #ffffff;
+    border: solid 3px rgb(16, 46, 80);
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: 800px;
+}
+
+.main .contenu .carte
+{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main .contenu .carte
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main .contenu .carte .droite img
+{
+    height: 175px;
+    width: 175px;
+    transition: filter 0.3s ease;
+}
+
+.main .contenu .carte .droite img:hover
+{
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+.main2 .contenu2 .carte2 .gauche2 
+{
+    flex: 1;
+    padding: 5px;
+    background-color: rgba(64, 64, 64, 0.8);
+    color: #ffffff;
+    border: solid 3px rgb(16, 46, 80);
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: 800px;
+}
+
+.main2 .contenu2 .carte2
+{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main2 .contenu2 .carte2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main2 .contenu2 .carte2 .droite2 img
+{
+    height: 100px;
+    width: 100px;
+    transition: filter 0.3s ease;
+}
+
+.main2 .contenu2 .carte2 .droite2 img:hover
+{
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+.main3 .contenu3 .carte3 
+{
+     color: white;
+    margin: 0 auto;
+    background-color: rgba(64, 64, 64, 0.8);
+    border: solid 3px rgb(16, 46, 80);
+    border-radius: 8px;
+    max-width: 900px;
+    text-align: center;
+    
+    
+}
+
+/* Specific style for the bottom section on partners page */
+.main3 .contenu3 .carte3.bottom-section 
+{
+    max-width: 500px;
+}
+
+
+
+
+.main3 .contenu3 .carte3 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+a:link 
+{
+    color: white;
+}
+  
+
+  a:visited 
+{
+    color: white;
+}
+
+.gauche h1 a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.gauche h1 a:hover {
+    color: grey;
+}
+
+.gauche3 a
+{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.gauche3 a:hover
+{
+    color: grey;
+}
+
+.gauche2 h1 a
+{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.gauche2 h1 a:hover
+{
+    color: grey;
+}
+
+form
+{
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(64, 64, 64, 0.8);
+    border: solid 3px rgb(16, 46, 80);
+    border-radius: 8px;
+    box-sizing: 600px;
+}
+
+fieldset 
+{
+    border: 2px solid rgb(16, 46, 80);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend 
+{
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+
+form input[type="text"], 
+form input[type="date"], 
+form input[type="number"], 
+form select {
+    width: calc(100% - 210px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+form input[type="submit"], 
+form input[type="reset"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: rgb(16, 46, 80);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover, 
+form input[type="reset"]:hover {
+    background-color: rgb(32, 92, 160);
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label
+{
+    color: white;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 5px;
+}
+footer
+{
+    margin-top: 20px;
+    border-top: 5px solid rgb(64, 64, 64);
+    background-color: black;
+    color: white;
+    
+}
+
+footer .infos .info h3
+{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: small;
+    border-bottom: 3px solid white;
+    width: 40%;
+    padding-bottom: 5px;
+}
+
+footer a
+{
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover
+{
+    color: grey;
+}
+
+footer .infos
+{
+    display: flex;
+    margin-left: 5%;
+    
+}
+
+footer .infos .info
+{
+    flex: 0 0 65%;
+    font-size: small;
+    
+}
+
+footer .infos .info li
+{
+    list-style-type: none;
+}
+

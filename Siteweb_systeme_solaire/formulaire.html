@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Cosmos Explorer - Contact</title>
+</head>
+<body>
+    <section class="top">
+    <img src="Images/logo.jpg" title="Logo Cosmos Explorer" alt="Logo Cosmos Explorer">
+    <nav>
+       <div class="onglets">
+            <a href="index.html">Accueil</a>
+            <a href="planetes.html">Planètes++</a>
+            <a href="exploration.html">Exploration</a>
+            <a href="partenaires.html">Partenaires</a>
+            <a href="formulaire.html">Contact</a>
+            <a href="#Contact">À propos</a>
+        </div>
+    </nav>
+    </section>
+    <header>
+        <h1>Cosmos Explorer</h1>
+        <h2>Votre passerelle vers le système solaire</h2>
+        <h4>Contactez-nous pour plus d'informations</h4>
+        </header>
+    
+    
+    <form name="MonFormulaire" action="UneAction" method="post">
+        <fieldset name="InfoPerso" id=" InfoPerso ">
+            <legend>Vos coordonnées</legend>
+            
+            <p><label for="Adresse courriel">Votre adresse courriel : </label>
+            <input type="text" name="courriel" id="courriel" required/></p>
+            
+            <p><label for="Nom et prénom">Votre nom complet : </label>
+            <input type="text" name="Nom" id="Nom" required title="Entrez votre nom complet"/></p>
+            
+            <p><label for="Date de naissance">Votre date de naissance : </label>
+            <input type="date" name="date" id="date" required/></p>
+            
+            
+            <p><label for="sujetInteret">Quel sujet vous intéresse le plus :</label>
+                <select id="sujetInteret" name="sujetInteret" required>
+                  <option value="" disabled selected>Sélectionnez un sujet</option>
+                  <option value="planetes">Les planètes du système solaire</option>
+                  <option value="exploration">Exploration spatiale</option>
+                  <option value="telescopes">Télescopes et équipements</option>
+                  <option value="formations">Formations et ateliers</option>
+                  <option value="observations">Séances d'observation</option>
+                  <option value="voyages">Voyages astronomiques</option>
+                  <option value="realiteVirtuelle">Expériences en réalité virtuelle</option>
+                  <option value="conferences">Conférences et expositions</option>
+                </select></p>
+
+            <p><label for="niveauConnaissance">Votre niveau de connaissance en astronomie :</label>
+                <select id="niveauConnaissance" name="niveauConnaissance" required>
+                  <option value="" disabled selected>Sélectionnez votre niveau</option>
+                  <option value="debutant">Débutant - Je découvre l'astronomie</option>
+                  <option value="amateur">Amateur - J'ai quelques connaissances</option>
+                  <option value="intermediaire">Intermédiaire - Je pratique régulièrement</option>
+                  <option value="avance">Avancé - Je suis un astronome amateur confirmé</option>
+                </select></p>
+              
+            <p><label for="Telephone">Votre numéro de téléphone : 
+            </label>
+            <input type="text" name="Telephone" id="Telephone" required/></p>    
+        </fieldset>
+        <p><input type="submit" name="btnSoumettre" value="Soumettre" />
+        <input type="reset" name="btnEffacer" value="Effacer" /></p>                      
+    </form>
+
+    <footer>
+        <div class="infos">
+        <div class="info">
+            <h3>Politiques et conditions</h3>
+        <div class="asteroid-list">
+            <p>• <a href="Confidentialite.html">Politique de confidentialité</a><br></p>
+            <p>• <a href="Utilisation.html">Conditions d'utilisation</a><br></p>
+            <p>• <a href="formulaire.html">Contact</a></p>
+        </div>
+        </div>
+        <div class="info">
+        <h3>Liens utiles</h3>
+        <div class="asteroid-list">
+            <p>• <a href="index.html">Accueil - Cosmos Explorer</a></p>
+            <p>• <a href="mailto:contact@cosmos-explorer.ca">Courriel : contact@cosmos-explorer.ca</a></p>
+            <p>• Téléphone: (418) 789-6789<br></p>
+            <p>• Notre adresse :</p>
+            <p>     125 Rue des Montagnes,</p>
+            <p> <a href="https://www.google.com/maps/search/?api=1&query=Saint-Théophile%2C+QC+G0M+2A0%2C+Canada" target="_blank">Saint-Théophile, QC G0M 2A0,</a></p>
+            <p>     Canada</p>
+        </div>
+        </div>
+        </div>
+        <p id="Contact"><small><sup>&copy</sup>2025 Cosmos Explorer Tous droits réservés</small></p>
+</footer>
+    
+</body>
+</html>
+
