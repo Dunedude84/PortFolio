@@ -1236,30 +1236,8 @@ section {
 }
 
 .method-info a:hover {
-    color: var(--primary-light);
-    text-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
-}
-
-.contact-link {
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
-    font-size: 1rem;
-    transition: all var(--transition-fast);
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
-    flex-shrink: 0;
-}
-
-.contact-link:hover {
-    transform: scale(1.1);
-    background: white;
-    color: var(--primary-color);
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+    text-shadow: 0 0 8px white
 }
 
 .contact-form-wrapper {
