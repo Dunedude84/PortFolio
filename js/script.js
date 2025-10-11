@@ -213,28 +213,6 @@ window.addEventListener('load', () => {
 });
 
 // ===========================
-// Easter Egg - Konami Code
-// ===========================
-let konamiCode = [];
-const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-
-document.addEventListener('keydown', (e) => {
-    konamiCode.push(e.key);
-    konamiCode = konamiCode.slice(-10);
-
-    if (konamiCode.join('') === konamiSequence.join('')) {
-        activateEasterEgg();
-    }
-});
-
-function activateEasterEgg() {
-    document.body.style.animation = 'rainbow 2s infinite';
-    setTimeout(() => {
-        document.body.style.animation = '';
-    }, 5000);
-}
-
-// ===========================
 // Performance Optimization
 // ===========================
 // Throttle function pour optimiser les événements scroll
