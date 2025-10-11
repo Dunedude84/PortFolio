@@ -140,31 +140,7 @@ document.querySelectorAll('.fade-in').forEach(el => {
 window.addEventListener('scroll', animateSkillIcons);
 animateSkillIcons(); // Appel initial
 
-// ===========================
-// Form Handling
-// ===========================
-const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Récupérer les valeurs du formulaire
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
-
-    // Simuler l'envoi du formulaire
-    console.log('Formulaire soumis:', formData);
-    
-    // Afficher un message de confirmation
-    alert('Merci pour votre message! Je vous répondrai dans les plus brefs délais.');
-    
-    // Réinitialiser le formulaire
-    contactForm.reset();
-});
 
 // ===========================
 // Scroll Reveal Animations
