@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe 2000</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body onload="initialisation()">
+    <div>
+        <h1>TIC-TAC-TOE 2000</h1>
+        <!--Joueur 1-->
+        <label for="txtJoueur1">Joueur 1 :</label>
+        <input id="txtJoueur1" type="text">
+        <br />
+        <span id="joueur1" class="message-erreur"></span>
+        <br /><br />
+
+        <!--Joueur 2-->
+        <label for="txtJoueur2">Joueur 2 :</label>
+        <input id="txtJoueur2" type="text">
+        <br />
+        <span id="joueur2" class="message-erreur"></span>
+        <br /><br />
+
+        <!--Boutons pour démarrer/terminer la partie-->
+        <button id="debuterPartie" onclick="debuterPartie()">Débuter la partie</button>
+        <button id="terminerPartie" onclick="terminerPartie()">Terminer la partie</button>
+        <br /><br />
+        <!--Grille de tic-tac-toe sous forme de tableau html-->
+        <table cellspacing="0">
+            <tr>
+                <td id="cellule1" onclick="validerClicCellule(1)"></td>
+                <td id="cellule2" onclick="validerClicCellule(2)"></td>
+                <td id="cellule3" onclick="validerClicCellule(3)"></td>
+            </tr>
+            <tr>
+                <td id="cellule4" onclick="validerClicCellule(4)"></td>
+                <td id="cellule5" onclick="validerClicCellule(5)"></td>
+                <td id="cellule6" onclick="validerClicCellule(6)"></td>
+            </tr>
+            <tr>
+                <td id="cellule7" onclick="validerClicCellule(7)"></td>
+                <td id="cellule8" onclick="validerClicCellule(8)"></td>
+                <td id="cellule9" onclick="validerClicCellule(9)"></td>
+            </tr>
+        </table>
+        <br />
+        <!--Pour l'affichage du resultat de la partie-->
+        <span id="resultat"></span>
+    </div>
+</body>
+</html>

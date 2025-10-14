@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="768.0" prefWidth="1024.0">
+         <top>
+            <!-- Barre de titre avec fond marron -->
+            <AnchorPane prefHeight="150.0" prefWidth="1024.0" style="-fx-background-color: #8B4513;">
+               <children>
+                  <!-- Boutons de menu à gauche -->
+                  <VBox alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="130.0" prefWidth="140.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="btnCommencer" fitHeight="40.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/commencer.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnCharger" fitHeight="40.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/charger.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnEnregistrer" fitHeight="40.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/enregistrer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  
+                  <!-- Titre du jeu au centre -->
+                  <ImageView fitHeight="120.0" fitWidth="600.0" layoutX="212.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/conquetechevalier.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         
+         <center>
+            <!-- Zone de combat -->
+            <AnchorPane prefHeight="400.0" prefWidth="1024.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="0.0" layoutY="20.0" prefHeight="300.0" prefWidth="1024.0" spacing="20.0">
+                     <children>
+                        <!-- Image du héros -->
+                        <ImageView fx:id="imgHero" fitHeight="300.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/knight.jpg" />
+                           </image>
+                        </ImageView>
+                        
+                        <!-- Stats du héros -->
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #E0E0E0; -fx-border-color: #808080; -fx-border-width: 2;">
+                           <children>
+                              <Label fx:id="lblHeroName" alignment="CENTER" prefWidth="200.0" text="Le Chevalier" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Vie" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblHeroHP" text="45" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Attaque" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblHeroAttack" text="10" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Défense" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblHeroDefense" text="10" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblHeroStatus" alignment="CENTER" prefWidth="200.0" text="" textFill="#FF0000">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        
+                        <!-- Stats de l'adversaire -->
+                        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #E0E0E0; -fx-border-color: #808080; -fx-border-width: 2;">
+                           <children>
+                              <Label fx:id="lblEnemyName" alignment="CENTER" prefWidth="200.0" text="Dragon Maléfique" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Vie" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblEnemyHP" text="175" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Attaque" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblEnemyAttack" text="15" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Défense" textFill="#000000">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="lblEnemyDefense" text="7" textFill="#000000">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblEnemyStatus" alignment="CENTER" prefWidth="200.0" text="" textFill="#FF0000">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        
+                        <!-- Image de l'adversaire -->
+                        <ImageView fx:id="imgEnemy" fitHeight="300.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/dragon.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+         
+         <bottom>
+            <!-- Zone des boutons d'action avec fond marron -->
+            <AnchorPane prefHeight="100.0" prefWidth="1024.0" style="-fx-background-color: #8B4513;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="0.0" layoutY="10.0" prefHeight="80.0" prefWidth="1024.0" spacing="100.0">
+                     <children>
+                        <ImageView fx:id="btnAttaquer" fitHeight="60.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/attaquer.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnMagie" fitHeight="60.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/magie.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
