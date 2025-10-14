@@ -8,18 +8,24 @@ Ce portfolio a été créé pour présenter mes compétences, mes projets et mon
 
 ## 🚀 Technologies Utilisées
 
+### Front-End
 - **HTML5** - Structure sémantique et moderne
 - **CSS3** - Styles avancés avec animations et transitions
 - **JavaScript (Vanilla)** - Interactivité et animations dynamiques
 - **Font Awesome** - Icônes vectorielles
 
+### Back-End & Desktop
+- **Java** - Programmation orientée objet
+- **JavaFX** - Interface graphique pour applications desktop
+- **FXML** - Définition d'interfaces utilisateur pour JavaFX
+
 ## 📋 Sections
 
 1. **Accueil** - Présentation avec effet de frappe animé
 2. **À propos** - Parcours et présentation personnelle
-3. **Compétences** - Compétences techniques et transversales avec barres de progression animées
-4. **Projets** - Présentation de mes réalisations (Dominion Sign Group, Cosmos Explorer)
-5. **Contact** - Formulaire de contact et informations de contact
+3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
+4. **Projets** - Présentation de mes réalisations (Dominion Sign Group, Cosmos Explorer, Tic Tac Toe 2000, La Conquête du Chevalier)
+5. **Contact** - Informations de contact et liens professionnels
 
 ## ✨ Fonctionnalités
 
@@ -54,14 +60,31 @@ Ce portfolio a été créé pour présenter mes compétences, mes projets et mon
 ## 📁 Structure du Projet
 
 ```
-Mon_Portfolio/
+Portfolio/
 │
-├── index.html          # Page principale
+├── index.html                      # Page principale
 ├── css/
-│   └── style.css      # Styles et animations
+│   └── style.css                  # Styles et animations
 ├── js/
-│   └── script.js      # Logique et interactivité
-└── README.md          # Documentation
+│   └── script.js                  # Logique et interactivité
+├── images/                        # Images du portfolio
+├── DOMINION/                      # Projet Dominion Sign Group
+├── Siteweb_systeme_solaire/       # Projet Cosmos Explorer
+├── tic_tac_toe 2000/              # Projet Tic Tac Toe 2000
+│   ├── index.html
+│   ├── css/
+│   ├── script/
+│   └── images/
+├── jeu_java/                      # Projet La Conquête du Chevalier
+│   └── src/
+│       ├── App.java
+│       ├── RPGController.java
+│       ├── PersonnageRPG.java
+│       ├── Joueur.java
+│       ├── PointSauvegarde.java
+│       ├── rpgui.fxml
+│       └── images/
+└── README.md                      # Documentation
 ```
 
 ## 🎨 Palette de Couleurs
@@ -76,6 +99,7 @@ Mon_Portfolio/
 
 ### 1. Dominion Sign Group
 Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
+- **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
 - Design professionnel et élégant
 - Compteur anniversaire dynamique
 - Galerie de réalisations
@@ -83,10 +107,27 @@ Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
 
 ### 2. Cosmos Explorer
 Site web éducatif sur le système solaire.
+- **Technologies** : HTML5, CSS3, JavaScript, Animations
 - Interface immersive
 - Contenu éducatif riche
-- Animations et interactivité
+- Compteur de temps dynamique
 - Navigation intuitive
+
+### 3. Tic Tac Toe 2000
+Jeu interactif de Tic-Tac-Toe avec interface moderne.
+- **Technologies** : HTML5, CSS3, JavaScript, DOM
+- Jeu pour deux joueurs
+- Validation des coups
+- Détection automatique du gagnant
+- Thème sombre avec couleurs rouge et jaune
+
+### 4. La Conquête du Chevalier
+Jeu de rôle (RPG) développé en Java avec JavaFX.
+- **Technologies** : Java, JavaFX, FXML, OOP
+- Système de combat RPG
+- Gestion d'inventaire et objets magiques
+- Sauvegarde/Chargement de partie
+- Interface graphique JavaFX complète
 
 ## 📱 Responsive Design
 
@@ -121,9 +162,9 @@ Pour personnaliser le portfolio :
 ## 📧 Contact
 
 Pour toute question ou opportunité professionnelle :
-- **Email** : vincent.lortie@example.com
-- **LinkedIn** : [Vincent Lortie](#)
-- **GitHub** : [@vincentlortie](#)
+- **Email** : vincelortie@gmail.com
+- **LinkedIn** : [Vincent Lortie](https://www.linkedin.com/in/vincent-lortie-b55986253)
+- **GitHub** : [@Dunedude84](https://github.com/Dunedude84/)
 
 ## 📄 Licence
 
