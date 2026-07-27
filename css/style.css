@@ -791,8 +791,43 @@ section {
 
 .skill-item {
     position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100px;
     height: 100px;
+    margin: -50px 0 0 -50px;
+    --orbit-radius: 125px;
+    animation: orbit 24s linear infinite;
+}
+
+.skill-item:nth-child(1) {
+    animation-delay: -18s;
+}
+
+.skill-item:nth-child(2) {
+    animation-delay: -12s;
+}
+
+.skill-item:nth-child(3) {
+    animation-delay: -6s;
+}
+
+.skill-item:nth-child(4) {
+    animation-delay: 0s;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg);
+    }
+}
+
+.skill-badge {
+    width: 100%;
+    height: 100%;
     background: var(--bg-secondary);
     border: 2px solid var(--primary-color);
     border-radius: 50%;
@@ -800,62 +835,69 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    padding: 0 8px;
+    box-sizing: border-box;
     box-shadow: 0 0 20px rgba(52, 152, 219, 0.4);
-    transition: all var(--transition-normal);
-    animation: float 6s infinite ease-in-out;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    animation: badgeFloat 6s infinite ease-in-out;
 }
 
-.skill-item:nth-child(1) {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.skill-item:nth-child(1) .skill-badge {
     animation-delay: 0s;
 }
 
-.skill-item:nth-child(2) {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+.skill-item:nth-child(2) .skill-badge {
     animation-delay: 1.5s;
 }
 
-.skill-item:nth-child(3) {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.skill-item:nth-child(3) .skill-badge {
     animation-delay: 3s;
 }
 
-.skill-item:nth-child(4) {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.skill-item:nth-child(4) .skill-badge {
     animation-delay: 4.5s;
 }
 
-.skill-item:hover {
+.skill-item:hover .skill-badge {
     transform: scale(1.1);
     box-shadow: 0 0 30px rgba(52, 152, 219, 0.8);
+}
+
+@keyframes badgeFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .skill-item i {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    transition: opacity 1.5s ease;
 }
 
-.skill-item:nth-child(1) i {
+.skill-item span {
+    transition: opacity 1.5s ease;
+    display: block;
+    max-width: 78px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.skill-item .skill-content-fade {
+    opacity: 0;
+}
+
+.skill-item:nth-child(odd) i {
     color: var(--primary-color);
 }
 
-.skill-item:nth-child(2) i {
-    color: var(--primary-light);
-}
-
-.skill-item:nth-child(3) i {
-    color: var(--primary-color);
-}
-
-.skill-item:nth-child(4) i {
+.skill-item:nth-child(even) i {
     color: var(--primary-light);
 }
 
@@ -1573,6 +1615,8 @@ section {
     .skill-item {
         width: 70px;
         height: 70px;
+        margin: -35px 0 0 -35px;
+        --orbit-radius: 90px;
     }
 
     .skill-item i {
@@ -1581,6 +1625,7 @@ section {
 
     .skill-item span {
         font-size: 0.7rem;
+        max-width: 54px;
     }
 
     .skill-icons-grid {

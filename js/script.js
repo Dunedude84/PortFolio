@@ -92,6 +92,49 @@ setTimeout(() => {
 }, 1500);
 
 // ===========================
+// Skills Circle Carousel (fade-in/fade-out)
+// ===========================
+const skillsCircleBadges = document.querySelectorAll('#skills-circle .skill-item');
+
+if (skillsCircleBadges.length) {
+    const acquiredSkills = Array.from(document.querySelectorAll('#competences .skill-icon-item')).map(item => ({
+        iconClass: item.querySelector('i').className,
+        name: item.querySelector('.skill-name').textContent.trim()
+    }));
+
+    if (acquiredSkills.length) {
+        const badgeCount = skillsCircleBadges.length;
+
+        const rotateBadge = (badge, skillIndex) => {
+            const icon = badge.querySelector('i');
+            const span = badge.querySelector('span');
+            const skill = acquiredSkills[skillIndex % acquiredSkills.length];
+
+            icon.classList.add('skill-content-fade');
+            span.classList.add('skill-content-fade');
+
+            setTimeout(() => {
+                icon.className = `${skill.iconClass} skill-content-fade`;
+                span.textContent = skill.name;
+
+                requestAnimationFrame(() => {
+                    icon.classList.remove('skill-content-fade');
+                    span.classList.remove('skill-content-fade');
+                });
+            }, 1500);
+        };
+
+        skillsCircleBadges.forEach((badge, i) => {
+            let skillIndex = i;
+            setInterval(() => {
+                skillIndex += badgeCount;
+                rotateBadge(badge, skillIndex);
+            }, 3000);
+        });
+    }
+}
+
+// ===========================
 // Skill Icons Animation
 // ===========================
 const skillIcons = document.querySelectorAll('.skill-icon-item');
