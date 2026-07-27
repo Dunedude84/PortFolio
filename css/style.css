@@ -988,15 +988,6 @@ section {
     text-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
-.skill-name.upcoming {
-    color: #5dade2;
-}
-
-.skill-icon-item:hover .skill-name.upcoming {
-    color: #85c1e9;
-    text-shadow: 0 0 8px rgba(93, 173, 226, 0.5);
-}
-
 .soft-skills {
     display: flex;
     flex-wrap: wrap;
