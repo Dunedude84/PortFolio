@@ -70,20 +70,6 @@ Portfolio/
 ├── images/                        # Images du portfolio
 ├── DOMINION/                      # Projet Dominion Sign Group
 ├── Siteweb_systeme_solaire/       # Projet Cosmos Explorer
-├── tic_tac_toe 2000/              # Projet Tic Tac Toe 2000
-│   ├── index.html
-│   ├── css/
-│   ├── script/
-│   └── images/
-├── jeu_java/                      # Projet La Conquête du Chevalier
-│   └── src/
-│       ├── App.java
-│       ├── RPGController.java
-│       ├── PersonnageRPG.java
-│       ├── Joueur.java
-│       ├── PointSauvegarde.java
-│       ├── rpgui.fxml
-│       └── images/
 └── README.md                      # Documentation
 ```
 
@@ -112,22 +98,6 @@ Site web éducatif sur le système solaire.
 - Contenu éducatif riche
 - Compteur de temps dynamique
 - Navigation intuitive
-
-### 3. Tic Tac Toe 2000
-Jeu interactif de Tic-Tac-Toe avec interface moderne.
-- **Technologies** : HTML5, CSS3, JavaScript, DOM
-- Jeu pour deux joueurs
-- Validation des coups
-- Détection automatique du gagnant
-- Thème sombre avec couleurs rouge et jaune
-
-### 4. La Conquête du Chevalier
-Jeu de rôle (RPG) développé en Java avec JavaFX.
-- **Technologies** : Java, JavaFX, FXML, OOP
-- Système de combat RPG
-- Gestion d'inventaire et objets magiques
-- Sauvegarde/Chargement de partie
-- Interface graphique JavaFX complète
 
 ## 📱 Responsive Design
 
