@@ -70,8 +70,13 @@ Portfolio/
 ├── images/                        # Images du portfolio
 ├── DOMINION/                      # Projet Dominion Sign Group
 ├── Siteweb_systeme_solaire/       # Projet Cosmos Explorer
+├── solar-system-java/             # Projet Solar System (Java/JavaFX)
 └── README.md                      # Documentation
 ```
+
+> Note : le projet "Horaires Pharmacie" (`web_app/`) est développé et déployé
+> dans un dépôt séparé, il n'est pas inclus ici. Une démo est accessible via
+> le lien fourni dans la section Projets du portfolio.
 
 ## 🎨 Palette de Couleurs
 
@@ -98,6 +103,13 @@ Site web éducatif sur le système solaire.
 - Contenu éducatif riche
 - Compteur de temps dynamique
 - Navigation intuitive
+
+### 3. Solar System Java
+Simulation 3D du système solaire en Java.
+- **Technologies** : Java, LWJGL/OpenGL, Maven
+- Rendu 3D des planètes et textures
+- Génération procédurale de sphères
+- Code source disponible dans `solar-system-java/`
 
 ## 📱 Responsive Design
 
