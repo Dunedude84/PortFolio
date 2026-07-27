@@ -16,15 +16,17 @@ Ce portfolio a été créé pour présenter mes compétences, mes projets et mon
 
 ### Back-End & Desktop
 - **Java** - Programmation orientée objet
-- **JavaFX** - Interface graphique pour applications desktop
+- **JavaFX / LWJGL / OpenGL** - Interfaces graphiques et rendu 3D pour applications desktop
 - **FXML** - Définition d'interfaces utilisateur pour JavaFX
+- **Node.js / Express** - API back-end pour applications web
+- **MongoDB** - Base de données NoSQL
 
 ## 📋 Sections
 
 1. **Accueil** - Présentation avec effet de frappe animé
 2. **À propos** - Parcours et présentation personnelle
 3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
-4. **Projets** - Présentation de mes réalisations (Dominion Sign Group, Cosmos Explorer, Tic Tac Toe 2000, La Conquête du Chevalier)
+4. **Projets** - Présentation de mes réalisations (Dominion Sign Group, Cosmos Explorer, Horaires Pharmacie, Solar System Java)
 5. **Contact** - Informations de contact et liens professionnels
 
 ## ✨ Fonctionnalités
@@ -104,7 +106,16 @@ Site web éducatif sur le système solaire.
 - Compteur de temps dynamique
 - Navigation intuitive
 
-### 3. Solar System Java
+### 3. Horaires Pharmacie
+Application web complète de gestion des horaires pour pharmacie.
+- **Technologies** : Node.js, Express, MongoDB
+- Authentification admin/employé
+- Génération d'horaires et gestion des disponibilités
+- Résumé des heures travaillées
+- Mode invité en lecture seule pour démonstration
+- Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
+
+### 4. Solar System Java
 Simulation 3D du système solaire en Java.
 - **Technologies** : Java, LWJGL/OpenGL, Maven
 - Rendu 3D des planètes et textures
