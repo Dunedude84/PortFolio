@@ -26,7 +26,12 @@ Ce portfolio a été créé pour présenter mes compétences, mes projets et mon
 1. **Accueil** - Présentation avec effet de frappe animé
 2. **À propos** - Parcours et présentation personnelle
 3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
-4. **Projets** - Présentation de mes réalisations (Dominion Sign Group, Cosmos Explorer, Horaires Pharmacie, Solar System Java)
+4. **Projets** - Présentation de mes réalisations dans l'ordre :
+   1. Horaires Pharmacie
+   2. API Discogs (Application Android)
+   3. Solar System Java (Simulation 3D)
+   4. Cosmos Explorer
+   5. Dominion Sign Group
 5. **Contact** - Informations de contact et liens professionnels
 
 ## ✨ Fonctionnalités
@@ -72,13 +77,15 @@ Portfolio/
 ├── images/                        # Images du portfolio
 ├── DOMINION/                      # Projet Dominion Sign Group
 ├── Siteweb_systeme_solaire/       # Projet Cosmos Explorer
-├── solar-system-java/             # Projet Solar System (Java/JavaFX)
 └── README.md                      # Documentation
 ```
 
-> Note : le projet "Horaires Pharmacie" (`web_app/`) est développé et déployé
-> dans un dépôt séparé, il n'est pas inclus ici. Une démo est accessible via
-> le lien fourni dans la section Projets du portfolio.
+> Note : les projets suivants sont développés et déployés dans des dépôts
+> séparés, ils ne sont pas inclus ici. Des liens sont fournis dans la section
+> Projets du portfolio :
+> - **Horaires Pharmacie** (`hey-hi.ca`)
+> - **API Discogs (Android)** ([Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs))
+> - **Solar System Java** ([Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava))
 
 ## 🎨 Palette de Couleurs
 
@@ -113,14 +120,23 @@ Application web complète de gestion des horaires pour pharmacie.
 - Génération d'horaires et gestion des disponibilités
 - Résumé des heures travaillées
 - Mode invité en lecture seule pour démonstration
+- Au moment de la connexion, le site propose **deux onglets** : un onglet **Employé** et un onglet **Administrateur**.
+  Les identifiants invités (`guest038` / `1357`) fonctionnent sur les deux onglets, en mode lecture seule (sans droits de modification).
 - Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
 
-### 4. Solar System Java
-Simulation 3D du système solaire en Java.
-- **Technologies** : Java, LWJGL/OpenGL, Maven
-- Rendu 3D des planètes et textures
-- Génération procédurale de sphères
-- Code source disponible dans `solar-system-java/`
+### 4. API Discogs (Application Android)
+Application Android native qui interroge l'API Discogs pour afficher une collection de vinyles.
+- **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
+- UI Material 3 et navigation entre écrans (collection / détail)
+- Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
+- Dépôt GitHub : [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
+
+### 5. Solar System Java (Simulation 3D)
+Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
+- **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
+- Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
+- Caméra libre, contrôle du temps, interface ImGui
+- Dépôt GitHub : [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
 
 ## 📱 Responsive Design
 
