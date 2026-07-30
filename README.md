@@ -177,8 +177,8 @@ Pour toute question ou opportunité professionnelle :
 
 ## 📄 Licence
 
-© 2025 Vincent Lortie. Tous droits réservés.
+© 2026 Vincent Lortie. Tous droits réservés.
 
 ---
 
-**Note** : Ce portfolio est conçu pour la recherche d'emploi en développement web. N'hésitez pas à me contacter pour discuter d'opportunités professionnelles!
+**Note** : Ce portfolio est conçu pour la recherche d'emploi en développement. N'hésitez pas à me contacter pour discuter d'opportunités professionnelles!
