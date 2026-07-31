@@ -97,23 +97,7 @@ Portfolio/
 
 ## 🌐 Projets Présentés
 
-### 1. Dominion Sign Group
-Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
-- **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
-- Design professionnel et élégant
-- Compteur anniversaire dynamique
-- Galerie de réalisations
-- Navigation responsive
-
-### 2. Cosmos Explorer
-Site web éducatif sur le système solaire.
-- **Technologies** : HTML5, CSS3, JavaScript, Animations
-- Interface immersive
-- Contenu éducatif riche
-- Compteur de temps dynamique
-- Navigation intuitive
-
-### 3. Horaires Pharmacie
+### 1. Horaires Pharmacie
 Application web complète de gestion des horaires pour pharmacie.
 - **Technologies** : Node.js, Express, MongoDB
 - Authentification admin/employé
@@ -124,19 +108,35 @@ Application web complète de gestion des horaires pour pharmacie.
   Les identifiants invités (`guest038` / `1357`) fonctionnent sur les deux onglets, en mode lecture seule (sans droits de modification).
 - Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
 
-### 4. API Discogs (Application Android)
+### 2. API Discogs (Application Android)
 Application Android native qui interroge l'API Discogs pour afficher une collection de vinyles.
 - **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - UI Material 3 et navigation entre écrans (collection / détail)
 - Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
 - Dépôt GitHub : [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
 
-### 5. Solar System Java (Simulation 3D)
+### 3. Solar System Java (Simulation 3D)
 Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
 - **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
 - Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
 - Caméra libre, contrôle du temps, interface ImGui
 - Dépôt GitHub : [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
+
+### 4. Cosmos Explorer
+Site web éducatif sur le système solaire.
+- **Technologies** : HTML5, CSS3, JavaScript, Animations
+- Interface immersive
+- Contenu éducatif riche
+- Compteur de temps dynamique
+- Navigation intuitive
+
+### 5. Dominion Sign Group
+Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
+- **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
+- Design professionnel et élégant
+- Compteur anniversaire dynamique
+- Galerie de réalisations
+- Navigation responsive
 
 ## 📱 Responsive Design
 
