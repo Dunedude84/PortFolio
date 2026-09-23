@@ -1,184 +1,198 @@
 # Portfolio - Vincent Lortie
 
-Portfolio professionnel développé pour la recherche d'emploi en tant que Programmeur-Analyste.
+**English** | [Français](README.fr.md)
 
-## 🎯 Objectif
+Professional portfolio built for my job search as a Junior Programmer-Analyst.
 
-Ce portfolio a été créé pour présenter mes compétences, mes projets et mon parcours professionnel dans le domaine du développement web.
+## 🎯 Purpose
 
-## 🚀 Technologies Utilisées
+This portfolio was created to showcase my skills, projects and professional background in software development.
+
+## 🌐 Bilingual FR / EN
+
+The website is fully bilingual (French / English):
+
+- Language switcher (FR / EN buttons) in the navigation bar
+- All content translated via `data-i18n` attributes and a translations dictionary in `js/script.js`
+- Browser language detection on first visit, preference saved in `localStorage`
+- CV available for download in both languages (`vincent_lortie_CV_fr.pdf` / `vincent_lortie_CV_en.pdf`)
+
+## 🚀 Technologies Used
 
 ### Front-End
-- **HTML5** - Structure sémantique et moderne
-- **CSS3** - Styles avancés avec animations et transitions
-- **JavaScript (Vanilla)** - Interactivité et animations dynamiques
-- **Font Awesome** - Icônes vectorielles
+- **HTML5** - Modern semantic structure
+- **CSS3** - Advanced styles with animations and transitions
+- **JavaScript (Vanilla)** - Interactivity, animations and internationalization
+- **Font Awesome** - Vector icons
 
 ### Back-End & Desktop
-- **Java** - Programmation orientée objet
-- **JavaFX / LWJGL / OpenGL** - Interfaces graphiques et rendu 3D pour applications desktop
-- **FXML** - Définition d'interfaces utilisateur pour JavaFX
-- **Node.js / Express** - API back-end pour applications web
-- **MongoDB** - Base de données NoSQL
+- **Java** - Object-oriented programming
+- **JavaFX / LWJGL / OpenGL** - Graphical interfaces and 3D rendering for desktop applications
+- **FXML** - UI definitions for JavaFX
+- **Node.js / Express** - Back-end APIs for web applications
+- **MongoDB** - NoSQL database
 
 ## 📋 Sections
 
-1. **Accueil** - Présentation avec effet de frappe animé
-2. **À propos** - Parcours et présentation personnelle
-3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
-4. **Projets** - Présentation de mes réalisations dans l'ordre :
-   1. Horaires Pharmacie
-   2. API Discogs (Application Android)
-   3. Solar System Java (Simulation 3D)
+1. **Home** - Introduction with animated typing effect
+2. **About** - Background and personal introduction
+3. **Skills** - Technical and soft skills (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
+4. **Projects** - Showcase of my work, in order:
+   1. Horaires Pharmacie (Pharmacy Scheduler)
+   2. Discogs API (Android Application)
+   3. Solar System Java (3D Simulation)
    4. Cosmos Explorer
    5. Dominion Sign Group
-5. **Contact** - Informations de contact et liens professionnels
+5. **Contact** - Contact information and professional links
 
-## ✨ Fonctionnalités
+## ✨ Features
 
 ### Design & UX
-- Design moderne et épuré
-- Interface responsive (mobile, tablette, desktop)
-- Animations fluides et professionnelles
-- Palette de couleurs cohérente avec dégradés
-- Navigation intuitive avec menu hamburger sur mobile
+- Modern dark space theme with binary "matrix" animations
+- Responsive layout (mobile, tablet, desktop)
+- Smooth, professional animations
+- Consistent color palette with glow effects
+- Intuitive navigation with hamburger menu on mobile
 
 ### Animations
-- Effet de frappe pour le titre principal
-- Animations au scroll (fade-in, slide-in)
-- Barres de progression animées pour les compétences
-- Effets de survol sur les cartes et boutons
-- Parallax subtil sur la section hero
-- Animations flottantes pour les éléments visuels
+- Typing effect on the main title (restarts in the selected language)
+- Scroll-triggered animations (fade-in, slide-in)
+- Rotating skill badge carousel
+- Hover effects on cards and buttons
+- Subtle parallax on the hero section
+- Animated star trail following the cursor
 
-### Interactivité
-- Navigation smooth scroll
-- Menu mobile responsive
-- Formulaire de contact fonctionnel
-- Indicateur de section active dans la navigation
-- Effets visuels au scroll
+### Interactivity
+- Smooth scroll navigation
+- Responsive mobile menu
+- Active section indicator in the navigation
+- Instant FR/EN language switching
+- CV download in French or English
 
-### Accessibilité
-- Navigation au clavier
-- Attributs ARIA appropriés
-- Contraste de couleurs optimisé
-- Focus visible pour la navigation au clavier
+### Accessibility
+- Keyboard navigation
+- Proper ARIA attributes
+- Optimized color contrast
+- Visible focus for keyboard navigation
+- `lang` attribute updated on language switch
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
 Portfolio/
 │
-├── index.html                      # Page principale
+├── index.html                      # Main page
 ├── css/
-│   └── style.css                  # Styles et animations
+│   └── style.css                   # Styles and animations
 ├── js/
-│   └── script.js                  # Logique et interactivité
-├── images/                        # Images du portfolio
-├── DOMINION/                      # Projet Dominion Sign Group
-├── Siteweb_systeme_solaire/       # Projet Cosmos Explorer
-└── README.md                      # Documentation
+│   └── script.js                   # Logic, interactivity and FR/EN translations
+├── images/                         # Portfolio images
+├── DOMINION/                       # Dominion Sign Group project
+├── Siteweb_systeme_solaire/        # Cosmos Explorer project
+├── vincent_lortie_CV_fr.pdf        # Resume (French)
+├── vincent_lortie_CV_en.pdf        # Resume (English)
+├── README.md                       # Documentation (English)
+└── README.fr.md                    # Documentation (français)
 ```
 
-> Note : les projets suivants sont développés et déployés dans des dépôts
-> séparés, ils ne sont pas inclus ici. Des liens sont fournis dans la section
-> Projets du portfolio :
+> Note: the following projects are developed and deployed in separate
+> repositories and are not included here. Links are provided in the
+> Projects section of the portfolio:
 > - **Horaires Pharmacie** (`hey-hi.ca`)
-> - **API Discogs (Android)** ([Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs))
+> - **Discogs API (Android)** ([Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs))
 > - **Solar System Java** ([Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava))
 
-## 🎨 Palette de Couleurs
+## 🎨 Color Palette
 
-- **Primaire**: #6366f1 (Indigo)
-- **Secondaire**: #ec4899 (Rose)
-- **Accent**: #14b8a6 (Teal)
-- **Texte**: #1f2937 (Gris foncé)
-- **Arrière-plan**: #ffffff / #f9fafb
+- **Primary**: #3498db (Space Blue)
+- **Primary Dark**: #102e50 (Deep Blue)
+- **Primary Light**: #5dade2 (Light Blue)
+- **Text**: #ffffff / #d1d5db
+- **Background**: #000000 / #0a0a0a
 
-## 🌐 Projets Présentés
+## 🌐 Featured Projects
 
-### 1. Horaires Pharmacie
-Application web complète de gestion des horaires pour pharmacie.
-- **Technologies** : Node.js, Express, MongoDB
-- Authentification admin/employé
-- Génération d'horaires et gestion des disponibilités
-- Résumé des heures travaillées
-- Mode invité en lecture seule pour démonstration
-- Au moment de la connexion, le site propose **deux onglets** : un onglet **Employé** et un onglet **Administrateur**.
-  Les identifiants invités (`guest038` / `1357`) fonctionnent sur les deux onglets, en mode lecture seule (sans droits de modification).
-- Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
+### 1. Horaires Pharmacie (Pharmacy Scheduler)
+Complete web application for pharmacy schedule management.
+- **Technologies**: Node.js, Express, MongoDB
+- Admin/employee authentication
+- Schedule generation and availability management
+- Summary of hours worked
+- Read-only guest mode for demonstration
+- At login, the site offers **two tabs**: an **Employee** tab and an **Administrator** tab.
+  The guest credentials (`guest038` / `1357`) work on both tabs, in read-only mode (no editing rights).
+- Live demo: [hey-hi.ca](https://hey-hi.ca)
 
-### 2. API Discogs (Application Android)
-Application Android native qui interroge l'API Discogs pour afficher une collection de vinyles.
-- **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
-- UI Material 3 et navigation entre écrans (collection / détail)
-- Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
-- Dépôt GitHub : [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
+### 2. Discogs API (Android Application)
+Native Android application that queries the Discogs API to display a vinyl collection.
+- **Technologies**: Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
+- Material 3 UI and screen navigation (collection / detail)
+- User selector, alphabetical grid, details for each album
+- GitHub repository: [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
 
-### 3. Solar System Java (Simulation 3D)
-Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
-- **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
-- Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
-- Caméra libre, contrôle du temps, interface ImGui
-- Dépôt GitHub : [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
+### 3. Solar System Java (3D Simulation)
+3D solar system simulation in Java with LWJGL/OpenGL.
+- **Technologies**: Java, LWJGL, OpenGL, JOML, Maven
+- 3D rendering with realistic textures, Saturn's rings, lunar orbit
+- Free camera, time control, ImGui interface
+- GitHub repository: [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
 
 ### 4. Cosmos Explorer
-Site web éducatif sur le système solaire.
-- **Technologies** : HTML5, CSS3, JavaScript, Animations
-- Interface immersive
-- Contenu éducatif riche
-- Compteur de temps dynamique
-- Navigation intuitive
+Educational website about the solar system.
+- **Technologies**: HTML5, CSS3, JavaScript, Animations
+- Immersive interface
+- Rich educational content
+- Dynamic time counter
+- Intuitive navigation
 
 ### 5. Dominion Sign Group
-Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
-- **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
-- Design professionnel et élégant
-- Compteur anniversaire dynamique
-- Galerie de réalisations
-- Navigation responsive
+Corporate website celebrating the company's 75 years of expertise.
+- **Technologies**: HTML5, CSS3, JavaScript, Responsive Design
+- Professional and elegant design
+- Dynamic anniversary counter
+- Achievements gallery
+- Responsive navigation
 
 ## 📱 Responsive Design
 
-Le portfolio est entièrement responsive et optimisé pour :
+The portfolio is fully responsive and optimized for:
 - 📱 Mobile (< 640px)
-- 📱 Tablette (640px - 968px)
+- 📱 Tablet (640px - 968px)
 - 💻 Desktop (> 968px)
 
-## 🔧 Installation & Utilisation
+## 🔧 Installation & Usage
 
-1. Cloner ou télécharger le projet
-2. Ouvrir `index.html` dans un navigateur moderne
-3. Aucune dépendance ou installation requise
+1. Clone or download the project
+2. Open `index.html` in a modern browser
+3. No dependencies or installation required
 
-## 📝 Personnalisation
+## 📝 Customization
 
-Pour personnaliser le portfolio :
+To customize the portfolio:
 
-1. **Informations personnelles** : Modifier le contenu dans `index.html`
-2. **Couleurs** : Ajuster les variables CSS dans `:root` (style.css)
-3. **Projets** : Ajouter/modifier les projets dans la section `#projets`
-4. **Compétences** : Ajuster les pourcentages et technologies dans la section `#competences`
+1. **Content & translations**: Edit the `translations` object in `js/script.js` (both `fr` and `en`) and the default French markup in `index.html`
+2. **Colors**: Adjust the CSS variables in `:root` (style.css)
+3. **Projects**: Add/edit projects in the `#projets` section
+4. **Skills**: Adjust the technologies and icons in the `#competences` section
 
-## 🎯 Optimisations
+## 🎯 Optimizations
 
-- Code optimisé pour les performances
-- Throttling des événements scroll
-- Animations CSS plutôt que JavaScript quand possible
-- Chargement asynchrone des ressources
-- Images optimisées
+- Code optimized for performance
+- Scroll event throttling
+- CSS animations rather than JavaScript when possible
+- Optimized images
 
 ## 📧 Contact
 
-Pour toute question ou opportunité professionnelle :
-- **Email** : vincelortie@gmail.com
-- **LinkedIn** : [Vincent Lortie](https://www.linkedin.com/in/vincent-lortie-b55986253)
-- **GitHub** : [@Dunedude84](https://github.com/Dunedude84/)
+For any question or professional opportunity:
+- **Email**: vincelortie@gmail.com
+- **LinkedIn**: [Vincent Lortie](https://www.linkedin.com/in/vincent-lortie-b55986253)
+- **GitHub**: [@Dunedude84](https://github.com/Dunedude84/)
 
-## 📄 Licence
+## 📄 License
 
-© 2026 Vincent Lortie. Tous droits réservés.
+© 2026 Vincent Lortie. All rights reserved.
 
 ---
 
-**Note** : Ce portfolio est conçu pour la recherche d'emploi en développement. N'hésitez pas à me contacter pour discuter d'opportunités professionnelles!
+**Note**: This portfolio is built for a job search in software development. Feel free to contact me to discuss professional opportunities!
