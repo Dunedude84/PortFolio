@@ -23,7 +23,7 @@ The website is fully bilingual (French / English):
 - **HTML5** - Modern semantic structure
 - **CSS3** - Advanced styles with animations and transitions
 - **JavaScript (Vanilla)** - Interactivity, animations and internationalization
-- **Font Awesome** - Vector icons
+- **Font Awesome** - Vector icons (self-hosted, no CDN dependency)
 
 ### Back-End & Desktop
 - **Java** - Object-oriented programming
@@ -87,6 +87,8 @@ Portfolio/
 │   └── style.css                   # Styles and animations
 ├── js/
 │   └── script.js                   # Logic, interactivity and FR/EN translations
+├── vendor/
+│   └── fontawesome/                # Icon library (self-hosted CSS + fonts)
 ├── images/                         # Portfolio images
 ├── DOMINION/                       # Dominion Sign Group project
 ├── Siteweb_systeme_solaire/        # Cosmos Explorer project
