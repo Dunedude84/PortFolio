@@ -100,8 +100,8 @@ Portfolio/
 > séparés, ils ne sont pas inclus ici. Des liens sont fournis dans la section
 > Projets du portfolio :
 > - **Horaires Pharmacie** (`hey-hi.ca`)
-> - **API Discogs (Android)** ([Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs))
-> - **Solar System Java** ([Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava))
+> - **API Discogs (Android)** ([Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api))
+> - **Solar System Java** ([Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java))
 
 ## 🎨 Palette de Couleurs
 
@@ -137,14 +137,14 @@ Application Android native qui interroge l'API Discogs pour afficher une collect
 - **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - UI Material 3 et navigation entre écrans (collection / détail)
 - Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
-- Dépôt GitHub : [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
+- Dépôt GitHub : [Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api)
 
 ### 4. Solar System Java (Simulation 3D)
 Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
 - **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
 - Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
 - Caméra libre, contrôle du temps, interface ImGui
-- Dépôt GitHub : [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
+- Dépôt GitHub : [Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java)
 
 ### 5. Cosmos Explorer
 Site web éducatif sur le système solaire.
