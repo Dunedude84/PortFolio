@@ -39,10 +39,11 @@ Le site est entièrement bilingue (français / anglais) :
 3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
 4. **Projets** - Présentation de mes réalisations dans l'ordre :
    1. Horaires Pharmacie
-   2. API Discogs (Application Android)
-   3. Solar System Java (Simulation 3D)
-   4. Cosmos Explorer
-   5. Dominion Sign Group
+   2. Guichet Automatique (Simulation ATM — WPF)
+   3. API Discogs (Application Android)
+   4. Solar System Java (Simulation 3D)
+   5. Cosmos Explorer
+   6. Dominion Sign Group
 5. **Contact** - Informations de contact et liens professionnels
 
 ## ✨ Fonctionnalités
@@ -123,21 +124,29 @@ Application web complète de gestion des horaires pour pharmacie.
   Les identifiants invités (`guest038` / `1357`) fonctionnent sur les deux onglets, en mode lecture seule (sans droits de modification).
 - Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
 
-### 2. API Discogs (Application Android)
+### 2. Guichet Automatique (Simulation ATM)
+Simulation complète d'un guichet automatique — application de bureau WPF, architecture MVVM, EF Core + SQL Server. Projet d'intégration du programme LEA.9C.
+- **Technologies** : C#, WPF, Microsoft.Toolkit.Mvvm, EF Core 3.1, SQL Server
+- Authentification client par NIP et portail administrateur
+- Dépôts, retraits, virements, paiements de factures, intérêts, marge de crédit, prélèvements hypothécaires
+- 4 types de comptes, 9 types de transactions, migrations et données de démonstration
+- Dépôt GitHub : [Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation)
+
+### 3. API Discogs (Application Android)
 Application Android native qui interroge l'API Discogs pour afficher une collection de vinyles.
 - **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - UI Material 3 et navigation entre écrans (collection / détail)
 - Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
 - Dépôt GitHub : [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
 
-### 3. Solar System Java (Simulation 3D)
+### 4. Solar System Java (Simulation 3D)
 Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
 - **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
 - Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
 - Caméra libre, contrôle du temps, interface ImGui
 - Dépôt GitHub : [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
 
-### 4. Cosmos Explorer
+### 5. Cosmos Explorer
 Site web éducatif sur le système solaire.
 - **Technologies** : HTML5, CSS3, JavaScript, Animations
 - Interface immersive
@@ -145,7 +154,7 @@ Site web éducatif sur le système solaire.
 - Compteur de temps dynamique
 - Navigation intuitive
 
-### 5. Dominion Sign Group
+### 6. Dominion Sign Group
 Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
 - **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
 - Design professionnel et élégant

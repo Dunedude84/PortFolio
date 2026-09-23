@@ -39,10 +39,11 @@ The website is fully bilingual (French / English):
 3. **Skills** - Technical and soft skills (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
 4. **Projects** - Showcase of my work, in order:
    1. Horaires Pharmacie (Pharmacy Scheduler)
-   2. Discogs API (Android Application)
-   3. Solar System Java (3D Simulation)
-   4. Cosmos Explorer
-   5. Dominion Sign Group
+   2. ATM Simulation (WPF Desktop App)
+   3. Discogs API (Android Application)
+   4. Solar System Java (3D Simulation)
+   5. Cosmos Explorer
+   6. Dominion Sign Group
 5. **Contact** - Contact information and professional links
 
 ## ✨ Features
@@ -123,21 +124,29 @@ Complete web application for pharmacy schedule management.
   The guest credentials (`guest038` / `1357`) work on both tabs, in read-only mode (no editing rights).
 - Live demo: [hey-hi.ca](https://hey-hi.ca)
 
-### 2. Discogs API (Android Application)
+### 2. ATM Simulation (Guichet Automatique)
+Complete ATM simulation — WPF desktop app, MVVM architecture, EF Core + SQL Server. Capstone project of the LEA.9C program.
+- **Technologies**: C#, WPF, Microsoft.Toolkit.Mvvm, EF Core 3.1, SQL Server
+- Client PIN authentication and admin portal
+- Deposits, withdrawals, transfers, bill payments, interest, line of credit, mortgage debits
+- 4 account types, 9 transaction types, migrations and seed data
+- GitHub repository: [Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation)
+
+### 3. Discogs API (Android Application)
 Native Android application that queries the Discogs API to display a vinyl collection.
 - **Technologies**: Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - Material 3 UI and screen navigation (collection / detail)
 - User selector, alphabetical grid, details for each album
 - GitHub repository: [Dunedude84/API_Discogs](https://github.com/Dunedude84/API_Discogs)
 
-### 3. Solar System Java (3D Simulation)
+### 4. Solar System Java (3D Simulation)
 3D solar system simulation in Java with LWJGL/OpenGL.
 - **Technologies**: Java, LWJGL, OpenGL, JOML, Maven
 - 3D rendering with realistic textures, Saturn's rings, lunar orbit
 - Free camera, time control, ImGui interface
 - GitHub repository: [Dunedude84/SolarSystemJava](https://github.com/Dunedude84/SolarSystemJava)
 
-### 4. Cosmos Explorer
+### 5. Cosmos Explorer
 Educational website about the solar system.
 - **Technologies**: HTML5, CSS3, JavaScript, Animations
 - Immersive interface
@@ -145,7 +154,7 @@ Educational website about the solar system.
 - Dynamic time counter
 - Intuitive navigation
 
-### 5. Dominion Sign Group
+### 6. Dominion Sign Group
 Corporate website celebrating the company's 75 years of expertise.
 - **Technologies**: HTML5, CSS3, JavaScript, Responsive Design
 - Professional and elegant design
