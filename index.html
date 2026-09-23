@@ -47,16 +47,22 @@
                 <span class="logo-text">-VL-</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-                <li><a href="#apropos" class="nav-link">À propos</a></li>
-                <li><a href="#competences" class="nav-link">Compétences</a></li>
-                <li><a href="#projets" class="nav-link">Projets</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#accueil" class="nav-link active" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                <li><a href="#competences" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#projets" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -69,18 +75,19 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="greeting">Bonjour, je suis</span>
+                    <span class="greeting" data-i18n="hero.greeting">Bonjour, je suis</span>
                     <span class="name">Vincent Lortie</span>
                 </h1>
                 <h2 class="hero-subtitle">
-                    <span class="typing-text">Programmeur-Analyste</span>
+                    <span class="typing-text">Programmeur-Analyste Junior</span>
                 </h2>
-                <p class="hero-description">
-                    Passionné par le développement et en formation pour devenir développeur full-stack
+                <p class="hero-description" data-i18n="hero.description">
+                    Programmeur-analyste junior passionné par le développement full-stack, à la recherche d'une
+                    opportunité
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                    <a href="#projets" class="btn btn-primary" data-i18n="hero.btnProjects">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.btnContact">Me contacter</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -115,38 +122,42 @@
         <div class="container">
             <h2 class="section-title">
                 <span class="title-number">01.</span>
-                À propos de moi
+                <span data-i18n="about.title">À propos de moi</span>
             </h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
-    Passionné d'informatique depuis mon plus jeune âge, j'ai commencé par explorer la programmation et le matériel sur les premiers ordinateurs familiaux. 
-    La vie m'a ensuite rapidement orienté vers le marché du travail, où j'ai passé plus de dix ans comme monteur/câbleur en électricité industrielle.
-</p>
-<p>
-    Aujourd'hui, je reviens à ma passion première à travers des études en programmation. Je développe des compétences solides en développement front-end, 
-    back-end et en bases de données, et je cherche un stage ou un emploi pour mettre en pratique mon savoir-faire technique et ma persévérance.
-</p>
+                    <p class="about-intro" data-i18n="about.p1">
+                        Passionné d'informatique depuis mon plus jeune âge, j'ai commencé par explorer la
+                        programmation et le matériel sur les premiers ordinateurs familiaux.
+                        La vie m'a ensuite rapidement orienté vers le marché du travail, où j'ai passé plus de dix
+                        ans comme monteur/câbleur en électricité industrielle.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Aujourd'hui, je reviens à ma passion première. Ma formation en programmation maintenant
+                        complétée, je possède des compétences solides en développement front-end,
+                        back-end et en bases de données, et je cherche un emploi comme programmeur-analyste junior
+                        pour mettre en pratique mon savoir-faire technique et ma persévérance.
+                    </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <h4>Formation en cours</h4>
-                                <p>Programmeur-Analyste (LEA.9C) Collège CDI</p>
+                                <h4 data-i18n="about.h1.title">Formation complétée</h4>
+                                <p data-i18n="about.h1.text">Programmeur-Analyste (LEA.9C) Collège CDI</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-code"></i>
                             <div>
-                                <h4>Spécialisation</h4>
-                                <p>Développement Web front-end, back-end et conception de bases de données</p>
+                                <h4 data-i18n="about.h2.title">Spécialisation</h4>
+                                <p data-i18n="about.h2.text">Développement Web front-end, back-end et conception de bases de données</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-lightbulb"></i>
                             <div>
-                                <h4>Passion</h4>
-                                <p>Innovation, design d'interfaces intuitives et résolution pratique de problèmes techniques</p>
+                                <h4 data-i18n="about.h3.title">Passion</h4>
+                                <p data-i18n="about.h3.text">Innovation, design d'interfaces intuitives et résolution pratique de problèmes techniques</p>
                             </div>
                         </div>
                     </div>
@@ -188,13 +199,13 @@
         <div class="container">
             <h2 class="section-title">
                 <span class="title-number">02.</span>
-                Compétences acquises
+                <span data-i18n="skills.title">Compétences acquises</span>
             </h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>Front-End & Back-End</h3>
+                        <h3 data-i18n="skills.cat1">Front-End &amp; Back-End</h3>
                     </div>
                     <div class="skill-icons-grid">
                         <div class="skill-icon-item">
@@ -331,7 +342,7 @@
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-tools"></i>
-                        <h3>Outils & Méthodologies</h3>
+                        <h3 data-i18n="skills.cat2">Outils &amp; Méthodologies</h3>
                     </div>
                     <div class="skill-icons-grid">
                         <div class="skill-icon-item">
@@ -425,19 +436,19 @@
                 <div class="skill-category">
                     <div class="category-header">
                         <i class="fas fa-brain"></i>
-                        <h3>Compétences Transversales</h3>
+                        <h3 data-i18n="skills.cat3">Compétences Transversales</h3>
                     </div>
                     <div class="soft-skills">
-                        <span class="soft-skill-tag">Résolution de problèmes</span>
-                        <span class="soft-skill-tag">Travail d'équipe</span>
-                        <span class="soft-skill-tag">Communication</span>
-                        <span class="soft-skill-tag">Autonomie</span>
-                        <span class="soft-skill-tag">Analytique</span>
-                        <span class="soft-skill-tag">Persévérant</span>
-                        <span class="soft-skill-tag">Autodidacte</span>
-                        <span class="soft-skill-tag">Créatif</span>
-                        <span class="soft-skill-tag">Apprentissage continu</span>
-                        <span class="soft-skill-tag">Souci du détail</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.1">Résolution de problèmes</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.2">Travail d'équipe</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.3">Communication</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.4">Autonomie</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.5">Analytique</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.6">Persévérant</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.7">Autodidacte</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.8">Créatif</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.9">Apprentissage continu</span>
+                        <span class="soft-skill-tag" data-i18n="skills.soft.10">Souci du détail</span>
                     </div>
                 </div>
             </div>
@@ -449,17 +460,18 @@
         <div class="container">
             <h2 class="section-title">
                 <span class="title-number">03.</span>
-                Mes projets personnels
+                <span data-i18n="projects.title">Mes projets personnels</span>
             </h2>
             <div class="projects-grid">
                 <!-- Projet 1: Horaires Pharmacie -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/web_app.png" alt="Projet Horaires Pharmacie">
+                        <img src="images/web_app.png" alt="Projet Horaires Pharmacie"
+                            data-i18n-alt="p1.alt">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://hey-hi.ca" target="_blank" class="project-link"
-                                    title="Voir la démo">
+                                    title="Voir la démo" data-i18n-title="projects.viewDemo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -472,7 +484,7 @@
                                 Horaires Pharmacie
                             </a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n-html="p1.desc">
                             Application web complète de gestion des horaires pour pharmacie, avec authentification
                             admin/employé, génération d'horaires, gestion des disponibilités et résumé des heures
                             travaillées. Un mode invité en lecture seule est disponible pour la démonstration.
@@ -490,10 +502,10 @@
                             <span class="tech-tag">Mongoose</span>
                         </div>
                         <div class="project-features">
-                            <p><i class="fas fa-check"></i> Génération automatique de l'horaire</p>
-                            <p><i class="fas fa-check"></i> Gestion des employés et disponibilités</p>
-                            <p><i class="fas fa-check"></i> Résumé des heures par employé</p>
-                            <p><i class="fas fa-check"></i> Mode invité en lecture seule</p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p1.f1">Génération automatique de l'horaire</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p1.f2">Gestion des employés et disponibilités</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p1.f3">Résumé des heures par employé</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p1.f4">Mode invité en lecture seule</span></p>
                         </div>
                     </div>
                 </div>
@@ -501,11 +513,12 @@
                 <!-- Projet 2: API Discogs -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/api_discogs.png" alt="Projet API Discogs">
+                        <img src="images/api_discogs.png" alt="Projet API Discogs" data-i18n-alt="p2.alt">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/Dunedude84/API_Discogs"
-                                    target="_blank" class="project-link" title="Voir le dépôt GitHub">
+                                    target="_blank" class="project-link" title="Voir le dépôt GitHub"
+                                    data-i18n-title="projects.viewRepo">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -514,11 +527,12 @@
                     <div class="project-content">
                         <h3 class="project-title">
                             <a href="https://github.com/Dunedude84/API_Discogs"
-                                target="_blank" style="color: inherit; text-decoration: none;">
+                                target="_blank" style="color: inherit; text-decoration: none;"
+                                data-i18n="p2.title">
                                 API Discogs (Application Android)
                             </a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="p2.desc">
                             Application Android native qui interroge l'API Discogs pour afficher la collection
                             de vinyles d'un utilisateur. Navigation par collection utilisateur, détails des
                             albums (pistes, artistes, crédits), vue en grille avec recherche alphabétique et
@@ -532,10 +546,10 @@
                             <span class="tech-tag">MVVM</span>
                         </div>
                         <div class="project-features">
-                            <p><i class="fas fa-check"></i> UI moderne avec Material 3 et Jetpack Compose</p>
-                            <p><i class="fas fa-check"></i> Navigation entre écrans (collection / détail)</p>
-                            <p><i class="fas fa-check"></i> API REST Discogs avec Retrofit + OkHttp</p>
-                            <p><i class="fas fa-check"></i> Architecture MVVM avec ViewModel</p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p2.f1">UI moderne avec Material 3 et Jetpack Compose</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p2.f2">Navigation entre écrans (collection / détail)</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p2.f3">API REST Discogs avec Retrofit + OkHttp</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p2.f4">Architecture MVVM avec ViewModel</span></p>
                         </div>
                     </div>
                 </div>
@@ -543,11 +557,13 @@
                 <!-- Projet 3: Solar System Java -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/render_solar_system.png" alt="Projet Solar System Java">
+                        <img src="images/render_solar_system.png" alt="Projet Solar System Java"
+                            data-i18n-alt="p3.alt">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/Dunedude84/SolarSystemJava"
-                                    target="_blank" class="project-link" title="Voir le dépôt GitHub">
+                                    target="_blank" class="project-link" title="Voir le dépôt GitHub"
+                                    data-i18n-title="projects.viewRepo">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -560,7 +576,7 @@
                                 Solar System Java (Simulation 3D)
                             </a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="p3.desc">
                             Simulation 3D du système solaire développée en Java avec LWJGL/OpenGL, traduite d'une
                             version C++ originale. Rendu réaliste des planètes texturées, mécanique orbitale,
                             anneaux de Saturne, caméra libre et interface interactive ImGui.
@@ -572,10 +588,10 @@
                             <span class="tech-tag">JOML</span>
                         </div>
                         <div class="project-features">
-                            <p><i class="fas fa-check"></i> Rendu 3D avec textures réalistes</p>
-                            <p><i class="fas fa-check"></i> Anneaux de Saturne et orbite lunaire</p>
-                            <p><i class="fas fa-check"></i> Caméra libre et contrôle du temps</p>
-                            <p><i class="fas fa-check"></i> Interface ImGui avec fiches planétaires</p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p3.f1">Rendu 3D avec textures réalistes</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p3.f2">Anneaux de Saturne et orbite lunaire</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p3.f3">Caméra libre et contrôle du temps</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p3.f4">Interface ImGui avec fiches planétaires</span></p>
                         </div>
                     </div>
                 </div>
@@ -583,11 +599,12 @@
                 <!-- Projet 4: Cosmos Explorer -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="Siteweb_systeme_solaire/Images/logo.jpg" alt="Projet Cosmos Explorer">
+                        <img src="Siteweb_systeme_solaire/Images/logo.jpg" alt="Projet Cosmos Explorer"
+                            data-i18n-alt="p4.alt">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="Siteweb_systeme_solaire/index.html" target="_blank" class="project-link"
-                                    title="Voir le projet">
+                                    title="Voir le projet" data-i18n-title="projects.viewProject">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -595,7 +612,7 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Cosmos Explorer</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="p4.desc">
                             Site web éducatif et interactif dédié à l'exploration du système solaire.
                             Présentation détaillée des planètes, astéroïdes, comètes et services d'observation
                             astronomique.
@@ -607,10 +624,10 @@
                             <span class="tech-tag">Animations</span>
                         </div>
                         <div class="project-features">
-                            <p><i class="fas fa-check"></i> Interface immersive</p>
-                            <p><i class="fas fa-check"></i> Compteur de temps dynamique</p>
-                            <p><i class="fas fa-check"></i> Navigation intuitive</p>
-                            <p><i class="fas fa-check"></i> Contenu éducatif riche</p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p4.f1">Interface immersive</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p4.f2">Compteur de temps dynamique</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p4.f3">Navigation intuitive</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p4.f4">Contenu éducatif riche</span></p>
                         </div>
                     </div>
                 </div>
@@ -618,11 +635,12 @@
                 <!-- Projet 5: Dominion Sign Group -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="DOMINION/images/75ans.png" alt="Projet Dominion Sign Group">
+                        <img src="DOMINION/images/75ans.png" alt="Projet Dominion Sign Group"
+                            data-i18n-alt="p5.alt">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="DOMINION/index.html" target="_blank" class="project-link"
-                                    title="Voir le projet">
+                                    title="Voir le projet" data-i18n-title="projects.viewProject">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -630,7 +648,7 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Dominion Sign Group</h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="p5.desc">
                             Site web corporatif célébrant les 75 ans d'expertise de Dominion Sign Group.
                             Présentation des services, réalisations et histoire de l'entreprise avec un design
                             moderne et professionnel.
@@ -642,10 +660,10 @@
                             <span class="tech-tag">Responsive</span>
                         </div>
                         <div class="project-features">
-                            <p><i class="fas fa-check"></i> Design moderne et élégant</p>
-                            <p><i class="fas fa-check"></i> Compteur anniversaire dynamique</p>
-                            <p><i class="fas fa-check"></i> Galerie de réalisations</p>
-                            <p><i class="fas fa-check"></i> Navigation responsive</p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p5.f1">Design moderne et élégant</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p5.f2">Compteur anniversaire dynamique</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p5.f3">Galerie de réalisations</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="p5.f4">Navigation responsive</span></p>
                         </div>
                     </div>
                 </div>
@@ -659,13 +677,13 @@
         <div class="container">
             <h2 class="section-title">
                 <span class="title-number">04.</span>
-                Contactez-moi!
+                <span data-i18n="contact.title">Contactez-moi!</span>
             </h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>
-                        Étudiant comme Programmeur-Analyste, je suis activement à la recherche d'opportunités
-                        de stage ou d'emploi en développement pour compléter ma formation.
+                    <p data-i18n="contact.intro">
+                        Programmeur-Analyste junior, je suis activement à la recherche d'opportunités
+                        d'emploi en développement pour lancer ma carrière.
                         N'hésitez pas à me contacter pour discuter de vos projets ou d'opportunités de collaboration.
                     </p>
                     <div class="contact-methods">
@@ -693,7 +711,11 @@
                             </div>
                             <div class="method-info">
                                 <h4>CV</h4>
-                                <a href="Vincent_Lortie_CV.pdf" target="_blank">Télécharger mon CV</a>
+                                <div class="cv-downloads">
+                                    <a href="vincent_lortie_CV_fr.pdf" target="_blank">Français</a>
+                                    <span class="cv-separator">·</span>
+                                    <a href="vincent_lortie_CV_en.pdf" target="_blank">English</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -740,7 +762,7 @@
         </div>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Vincent Lortie Tous droits réservés.</p>
+                <p>&copy; <span id="current-year">2025</span> Vincent Lortie <span data-i18n="footer.rights">Tous droits réservés.</span></p>
                 <div class="social-links">
                     <a href="https://github.com/Dunedude84/PortFolio" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
