@@ -1196,6 +1196,30 @@ section {
     line-height: 1.7;
 }
 
+.project-description a {
+    color: var(--primary-light);
+    text-decoration: underline;
+    text-decoration-color: rgba(93, 173, 226, 0.45);
+    text-underline-offset: 3px;
+    transition: all var(--transition-fast);
+}
+
+.project-description a:visited {
+    color: var(--primary-light);
+}
+
+.project-description a:hover {
+    color: #ffffff;
+    text-decoration-color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(52, 152, 219, 0.9);
+}
+
+.project-description a:focus-visible {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
