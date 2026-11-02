@@ -505,6 +505,54 @@
                 <span data-i18n="projects.title">Mes projets personnels</span>
             </h2>
             <div class="projects-grid">
+                <!-- Projet DevOps: Migration Cloud-Native Azure AKS & Terraform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/azure_aks_devops.svg" alt="Migration Cloud-Native Azure AKS &amp; Terraform"
+                            data-i18n-alt="aks.alt">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi" target="_blank" class="project-link"
+                                    title="Voir le dépôt GitHub" data-i18n-title="projects.viewRepo">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://hey-hi.ca" target="_blank" class="project-link"
+                                    title="Voir la démo" data-i18n-title="projects.viewDemo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi"
+                                target="_blank" style="color: inherit; text-decoration: none;"
+                                data-i18n="aks.title">
+                                Migration Cloud-Native : Azure AKS &amp; Terraform
+                            </a>
+                        </h3>
+                        <p class="project-description" data-i18n-html="aks.desc">
+                            Conteneurisation et migration de mes deux applications web en production (<a href="https://hey-hi.ca" target="_blank">hey-hi.ca</a> et <a href="https://biblio.hey-hi.ca" target="_blank">biblio.hey-hi.ca</a>) depuis un serveur local vers un cluster <strong>Microsoft Azure Kubernetes Service (AKS)</strong> provisionné avec <strong>Terraform</strong>. Exposition sécurisée en mode Zero-Trust via un connecteur <strong>Cloudflare Tunnel</strong> déployé directement en Pod Kubernetes, pipeline <strong>GitHub Actions CI/CD</strong> (tests, validation Terraform, scan de vulnérabilités Trivy) et outil d'opérations CLI en <strong>PowerShell</strong>.
+                            <br>Dépôt GitHub : <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi" target="_blank">azure-aks-terraform-hey-hi</a>
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Azure AKS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Cloudflare Tunnel</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">PowerShell</span>
+                        </div>
+                        <div class="project-features">
+                            <p><i class="fas fa-check"></i> <span data-i18n="aks.f1">Infrastructure as Code Terraform (VNet, ACR, AKS Cilium)</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="aks.f2">Exposition Zero-Trust via Pod Cloudflare Tunnel</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="aks.f3">Pipeline CI/CD GitHub Actions &amp; Scan sécurité Trivy</span></p>
+                            <p><i class="fas fa-check"></i> <span data-i18n="aks.f4">Outil CLI PowerShell (Deploy, Rollback idempotent, Metrics)</span></p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Projet 1: Horaires Pharmacie -->
                 <div class="project-card">
                     <div class="project-image">
@@ -516,10 +564,6 @@
                                     title="Voir la démo" data-i18n-title="projects.viewDemo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi" target="_blank" class="project-link"
-                                    title="Voir le dépôt GitHub" data-i18n-title="projects.viewRepo">
-                                    <i class="fab fa-github"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -527,14 +571,14 @@
                         <h3 class="project-title">
                             <a href="https://hey-hi.ca"
                                 target="_blank" style="color: inherit; text-decoration: none;">
-                                Horaires Pharmacie &amp; Infrastructure Azure AKS
+                                Horaires Pharmacie
                             </a>
                         </h3>
                         <p class="project-description" data-i18n-html="p1.desc">
                             Application web complète de gestion des horaires pour pharmacie, avec authentification
                             admin/employé, génération d'horaires, gestion des disponibilités et résumé des heures
-                            travaillées, conteneurisée avec <strong>Docker</strong> et déployée sur <strong>Microsoft Azure AKS</strong> via <strong>Terraform</strong>, <strong>Cloudflare Tunnel Zero-Trust</strong> et <strong>GitHub Actions CI/CD</strong>.
-                            <br>Voir le site en ligne : <a href="https://hey-hi.ca" target="_blank">hey-hi.ca</a> · Code &amp; Infra : <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi" target="_blank">GitHub</a>
+                            travaillées. Un mode invité en lecture seule est disponible pour la démonstration.
+                            <br>Voir le site en ligne : <a href="https://hey-hi.ca" target="_blank">hey-hi.ca</a>
                             <br><strong>Identifiants invité :</strong> Nom d'utilisateur: <strong><code>guest038</code></strong> · Mot de passe: <strong><code>1357</code></strong>
                             <br><em>Au moment de la connexion, le site propose <strong>deux onglets</strong> :
                             un onglet <strong>Employé</strong> et un onglet <strong>Administrateur</strong>.
@@ -542,16 +586,10 @@
                             en mode lecture seule (sans droits de modification).</em>
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Azure AKS</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Cloudflare Tunnel</span>
-                            <span class="tech-tag">GitHub Actions</span>
-                            <span class="tech-tag">PowerShell</span>
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express</span>
                             <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Mongoose</span>
                         </div>
                         <div class="project-features">
                             <p><i class="fas fa-check"></i> <span data-i18n="p1.f1">Génération automatique de l'horaire</span></p>
