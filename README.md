@@ -127,7 +127,7 @@ Portfolio/
 ## 🌐 Featured Projects
 
 ### 1. Cloud-Native Migration: Azure AKS & Terraform
-Containerization and migration of my two production web applications (`hey-hi.ca` & `biblio.hey-hi.ca`) from a home server to Microsoft Azure Kubernetes Service (AKS).
+Containerization and migration of my two production web applications (`hey-hi.ca` & `biblio.hey-hi.ca`) from a local server managed by **PM2** to Microsoft Azure Kubernetes Service (AKS), replacing PM2 process management with native Kubernetes orchestration (`ReplicaSets`, `livenessProbe` / `readinessProbe`).
 - **Technologies**: Microsoft Azure AKS, Terraform (IaC), Docker, Kubernetes, Cloudflare Zero-Trust Tunnel, GitHub Actions CI/CD, PowerShell, Bash, Python
 - Infrastructure as Code with Terraform (`azurerm` v4): VNet, Subnet, NSG, Azure Container Registry (`ACR`) with Managed Identity `AcrPull`, and AKS cluster (`1.35`, Azure CNI Overlay + Cilium)
 - Zero-Trust exposure via an in-cluster `cloudflared` Pod routing traffic to internal `ClusterIP` services without public inbound ports

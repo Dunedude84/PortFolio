@@ -532,7 +532,7 @@
                             </a>
                         </h3>
                         <p class="project-description" data-i18n-html="aks.desc">
-                            Conteneurisation et migration de mes deux applications web en production (<a href="https://hey-hi.ca" target="_blank">hey-hi.ca</a> et <a href="https://biblio.hey-hi.ca" target="_blank">biblio.hey-hi.ca</a>) depuis un serveur local vers un cluster <strong>Microsoft Azure Kubernetes Service (AKS)</strong> provisionné avec <strong>Terraform</strong>. Exposition sécurisée en mode Zero-Trust via un connecteur <strong>Cloudflare Tunnel</strong> déployé directement en Pod Kubernetes, pipeline <strong>GitHub Actions CI/CD</strong> (tests, validation Terraform, scan de vulnérabilités Trivy) et outil d'opérations CLI en <strong>PowerShell</strong>.
+                            Conteneurisation et migration de mes deux applications web en production (<a href="https://hey-hi.ca" target="_blank">hey-hi.ca</a> et <a href="https://biblio.hey-hi.ca" target="_blank">biblio.hey-hi.ca</a>) depuis un serveur local supervisé par <strong>PM2</strong> vers un cluster <strong>Microsoft Azure Kubernetes Service (AKS)</strong> provisionné avec <strong>Terraform</strong>. Remplacement de PM2 par l'orchestration native Kubernetes (ReplicaSets, sondes Liveness/Readiness), exposition sécurisée en mode Zero-Trust via un connecteur <strong>Cloudflare Tunnel</strong> en Pod Kubernetes, pipeline <strong>GitHub Actions CI/CD</strong> (tests, validation Terraform, scan Trivy) et outil d'opérations CLI en <strong>PowerShell</strong>.
                             <br>Dépôt GitHub : <a href="https://github.com/Dunedude84/azure-aks-terraform-hey-hi" target="_blank">azure-aks-terraform-hey-hi</a>
                         </p>
                         <div class="project-tech">
@@ -543,6 +543,7 @@
                             <span class="tech-tag">Cloudflare Tunnel</span>
                             <span class="tech-tag">GitHub Actions</span>
                             <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">PM2</span>
                         </div>
                         <div class="project-features">
                             <p><i class="fas fa-check"></i> <span data-i18n="aks.f1">Infrastructure as Code Terraform (VNet, ACR, AKS Cilium)</span></p>
