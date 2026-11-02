@@ -32,18 +32,27 @@ Le site est entièrement bilingue (français / anglais) :
 - **Node.js / Express** - API back-end pour applications web
 - **MongoDB** - Base de données NoSQL
 
+### Cloud, Conteneurs & DevOps
+- **Microsoft Azure (AKS & ACR)** - Cluster Kubernetes managé et registre privé de conteneurs
+- **Terraform (IaC)** - Provisionnement Infrastructure as Code (VNet, Subnet, NSG, ACR, AKS)
+- **Docker & Kubernetes** - Conteneurisation multi-stage, Deployments, Services, Secrets et RBAC
+- **Cloudflare Zero-Trust Tunnel** - Exposition sécurisée via tunnel QUIC sortant sans port public entrant
+- **GitHub Actions (CI/CD)** - Tests unitaires automatisés, validation Terraform et scan de sécurité Trivy
+- **PowerShell & Bash** - Scripts CLI d'opérations (déploiement, rollback idempotent, métriques en direct)
+
 ## 📋 Sections
 
 1. **Accueil** - Présentation avec effet de frappe animé
 2. **À propos** - Parcours et présentation personnelle
-3. **Compétences** - Compétences techniques et transversales (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
+3. **Compétences** - Compétences techniques, Cloud/DevOps et transversales (Azure AKS, Terraform, Docker, Kubernetes, GitHub Actions, PowerShell, HTML5, CSS3, JavaScript, Java, C#, SQL, etc.)
 4. **Projets** - Présentation de mes réalisations dans l'ordre :
-   1. Horaires Pharmacie
-   2. Guichet Automatique (Simulation ATM — WPF)
-   3. API Discogs (Application Android)
-   4. Solar System Java (Simulation 3D)
-   5. Cosmos Explorer
-   6. Dominion Sign Group
+   1. Migration Cloud-Native : Azure AKS & Terraform (`hey-hi.ca` & `biblio.hey-hi.ca`)
+   2. Horaires Pharmacie
+   3. Guichet Automatique (Simulation ATM — WPF)
+   4. API Discogs (Application Android)
+   5. Solar System Java (Simulation 3D)
+   6. Cosmos Explorer
+   7. Dominion Sign Group
 5. **Contact** - Informations de contact et liens professionnels
 
 ## ✨ Fonctionnalités
@@ -101,7 +110,9 @@ Portfolio/
 > Note : les projets suivants sont développés et déployés dans des dépôts
 > séparés, ils ne sont pas inclus ici. Des liens sont fournis dans la section
 > Projets du portfolio :
+> - **Migration Cloud-Native : Azure AKS & Terraform** ([Dunedude84/azure-aks-terraform-hey-hi](https://github.com/Dunedude84/azure-aks-terraform-hey-hi))
 > - **Horaires Pharmacie** (`hey-hi.ca`)
+> - **Guichet Automatique (WPF)** ([Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation))
 > - **API Discogs (Android)** ([Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api))
 > - **Solar System Java** ([Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java))
 
@@ -115,7 +126,17 @@ Portfolio/
 
 ## 🌐 Projets Présentés
 
-### 1. Horaires Pharmacie
+### 1. Migration Cloud-Native : Azure AKS & Terraform
+Conteneurisation et migration de mes deux applications web en production (`hey-hi.ca` & `biblio.hey-hi.ca`) depuis un serveur local vers Microsoft Azure Kubernetes Service (AKS).
+- **Technologies** : Microsoft Azure AKS, Terraform (IaC), Docker, Kubernetes, Cloudflare Zero-Trust Tunnel, GitHub Actions CI/CD, PowerShell, Bash, Python
+- Infrastructure as Code avec Terraform (`azurerm` v4) : VNet, Subnet, NSG, Azure Container Registry (`ACR`) avec Managed Identity `AcrPull`, et cluster AKS (`1.35`, Azure CNI Overlay + Cilium)
+- Exposition Zero-Trust via un Pod `cloudflared` déployé dans le cluster routant le trafic vers les services internes `ClusterIP` sans aucun port public entrant ouvert
+- Pipeline CI/CD GitHub Actions (tests unitaires Node.js, `terraform fmt/validate`, scan de vulnérabilités Trivy)
+- Outil CLI d'opérations en PowerShell (`hey-hi-ops.ps1`) pour les mises à jour sans coupure (*Rolling Update*), les rollbacks déclaratifs idempotents et les métriques CPU/RAM en direct (`kubectl top`)
+- Dépôt GitHub : [Dunedude84/azure-aks-terraform-hey-hi](https://github.com/Dunedude84/azure-aks-terraform-hey-hi)
+- Applications en production : [hey-hi.ca](https://hey-hi.ca) & [biblio.hey-hi.ca](https://biblio.hey-hi.ca)
+
+### 2. Horaires Pharmacie
 Application web complète de gestion des horaires pour pharmacie.
 - **Technologies** : Node.js, Express, MongoDB
 - Authentification admin/employé
@@ -126,7 +147,7 @@ Application web complète de gestion des horaires pour pharmacie.
   Les identifiants invités (`guest038` / `1357`) fonctionnent sur les deux onglets, en mode lecture seule (sans droits de modification).
 - Démo en ligne : [hey-hi.ca](https://hey-hi.ca)
 
-### 2. Guichet Automatique (Simulation ATM)
+### 3. Guichet Automatique (Simulation ATM)
 Simulation complète d'un guichet automatique — application de bureau WPF, architecture MVVM, EF Core + SQL Server. Projet d'intégration du programme LEA.9C.
 - **Technologies** : C#, WPF, Microsoft.Toolkit.Mvvm, EF Core 3.1, SQL Server
 - Authentification client par NIP et portail administrateur
@@ -134,21 +155,21 @@ Simulation complète d'un guichet automatique — application de bureau WPF, arc
 - 4 types de comptes, 9 types de transactions, migrations et données de démonstration
 - Dépôt GitHub : [Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation)
 
-### 3. API Discogs (Application Android)
+### 4. API Discogs (Application Android)
 Application Android native qui interroge l'API Discogs pour afficher une collection de vinyles.
 - **Technologies** : Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - UI Material 3 et navigation entre écrans (collection / détail)
 - Sélecteur d'utilisateur, grille alphabétique, détails de chaque album
 - Dépôt GitHub : [Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api)
 
-### 4. Solar System Java (Simulation 3D)
+### 5. Solar System Java (Simulation 3D)
 Simulation 3D du système solaire en Java avec LWJGL/OpenGL.
 - **Technologies** : Java, LWJGL, OpenGL, JOML, Maven
 - Rendu 3D avec textures réalistes, anneaux de Saturne, orbite lunaire
 - Caméra libre, contrôle du temps, interface ImGui
 - Dépôt GitHub : [Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java)
 
-### 5. Cosmos Explorer
+### 6. Cosmos Explorer
 Site web éducatif sur le système solaire.
 - **Technologies** : HTML5, CSS3, JavaScript, Animations
 - Interface immersive
@@ -156,7 +177,7 @@ Site web éducatif sur le système solaire.
 - Compteur de temps dynamique
 - Navigation intuitive
 
-### 6. Dominion Sign Group
+### 7. Dominion Sign Group
 Site web corporatif célébrant les 75 ans d'expertise de l'entreprise.
 - **Technologies** : HTML5, CSS3, JavaScript, Responsive Design
 - Design professionnel et élégant

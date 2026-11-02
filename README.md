@@ -32,18 +32,27 @@ The website is fully bilingual (French / English):
 - **Node.js / Express** - Back-end APIs for web applications
 - **MongoDB** - NoSQL database
 
+### Cloud, Containers & DevOps
+- **Microsoft Azure (AKS & ACR)** - Managed Kubernetes cluster and private container registry
+- **Terraform (IaC)** - Infrastructure as Code provisioning (VNet, Subnet, NSG, ACR, AKS)
+- **Docker & Kubernetes** - Multi-stage containerization, Deployments, Services, Secrets and RBAC
+- **Cloudflare Zero-Trust Tunnel** - Secure outbound QUIC ingress without public inbound ports
+- **GitHub Actions (CI/CD)** - Automated unit tests, Terraform validation and Trivy security scanning
+- **PowerShell & Bash** - Operational CLI scripts (deployment, idempotent rollback, live metrics)
+
 ## 📋 Sections
 
 1. **Home** - Introduction with animated typing effect
 2. **About** - Background and personal introduction
-3. **Skills** - Technical and soft skills (HTML5, CSS3, JavaScript, Java, JavaFX, FXML, SQL, etc.)
+3. **Skills** - Technical, Cloud/DevOps and soft skills (Azure AKS, Terraform, Docker, Kubernetes, GitHub Actions, PowerShell, HTML5, CSS3, JavaScript, Java, C#, SQL, etc.)
 4. **Projects** - Showcase of my work, in order:
-   1. Horaires Pharmacie (Pharmacy Scheduler)
-   2. ATM Simulation (WPF Desktop App)
-   3. Discogs API (Android Application)
-   4. Solar System Java (3D Simulation)
-   5. Cosmos Explorer
-   6. Dominion Sign Group
+   1. Cloud-Native Migration: Azure AKS & Terraform (`hey-hi.ca` & `biblio.hey-hi.ca`)
+   2. Horaires Pharmacie (Pharmacy Scheduler)
+   3. ATM Simulation (WPF Desktop App)
+   4. Discogs API (Android Application)
+   5. Solar System Java (3D Simulation)
+   6. Cosmos Explorer
+   7. Dominion Sign Group
 5. **Contact** - Contact information and professional links
 
 ## ✨ Features
@@ -101,7 +110,9 @@ Portfolio/
 > Note: the following projects are developed and deployed in separate
 > repositories and are not included here. Links are provided in the
 > Projects section of the portfolio:
+> - **Cloud-Native Migration: Azure AKS & Terraform** ([Dunedude84/azure-aks-terraform-hey-hi](https://github.com/Dunedude84/azure-aks-terraform-hey-hi))
 > - **Horaires Pharmacie** (`hey-hi.ca`)
+> - **ATM Simulation (WPF)** ([Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation))
 > - **Discogs API (Android)** ([Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api))
 > - **Solar System Java** ([Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java))
 
@@ -115,7 +126,17 @@ Portfolio/
 
 ## 🌐 Featured Projects
 
-### 1. Horaires Pharmacie (Pharmacy Scheduler)
+### 1. Cloud-Native Migration: Azure AKS & Terraform
+Containerization and migration of my two production web applications (`hey-hi.ca` & `biblio.hey-hi.ca`) from a home server to Microsoft Azure Kubernetes Service (AKS).
+- **Technologies**: Microsoft Azure AKS, Terraform (IaC), Docker, Kubernetes, Cloudflare Zero-Trust Tunnel, GitHub Actions CI/CD, PowerShell, Bash, Python
+- Infrastructure as Code with Terraform (`azurerm` v4): VNet, Subnet, NSG, Azure Container Registry (`ACR`) with Managed Identity `AcrPull`, and AKS cluster (`1.35`, Azure CNI Overlay + Cilium)
+- Zero-Trust exposure via an in-cluster `cloudflared` Pod routing traffic to internal `ClusterIP` services without public inbound ports
+- GitHub Actions CI/CD pipeline (Node.js unit tests, `terraform fmt/validate`, Trivy container vulnerability scan)
+- Custom PowerShell operational CLI (`hey-hi-ops.ps1`) for zero-downtime rolling updates, idempotent declarative rollbacks, and live CPU/RAM metrics (`kubectl top`)
+- GitHub repository: [Dunedude84/azure-aks-terraform-hey-hi](https://github.com/Dunedude84/azure-aks-terraform-hey-hi)
+- Live production apps: [hey-hi.ca](https://hey-hi.ca) & [biblio.hey-hi.ca](https://biblio.hey-hi.ca)
+
+### 2. Horaires Pharmacie (Pharmacy Scheduler)
 Complete web application for pharmacy schedule management.
 - **Technologies**: Node.js, Express, MongoDB
 - Admin/employee authentication
@@ -126,7 +147,7 @@ Complete web application for pharmacy schedule management.
   The guest credentials (`guest038` / `1357`) work on both tabs, in read-only mode (no editing rights).
 - Live demo: [hey-hi.ca](https://hey-hi.ca)
 
-### 2. ATM Simulation (Guichet Automatique)
+### 3. ATM Simulation (Guichet Automatique)
 Complete ATM simulation — WPF desktop app, MVVM architecture, EF Core + SQL Server. Capstone project of the LEA.9C program.
 - **Technologies**: C#, WPF, Microsoft.Toolkit.Mvvm, EF Core 3.1, SQL Server
 - Client PIN authentication and admin portal
@@ -134,21 +155,21 @@ Complete ATM simulation — WPF desktop app, MVVM architecture, EF Core + SQL Se
 - 4 account types, 9 transaction types, migrations and seed data
 - GitHub repository: [Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation)
 
-### 3. Discogs API (Android Application)
+### 4. Discogs API (Android Application)
 Native Android application that queries the Discogs API to display a vinyl collection.
 - **Technologies**: Kotlin, Jetpack Compose, Retrofit, Coil, MVVM
 - Material 3 UI and screen navigation (collection / detail)
 - User selector, alphabetical grid, details for each album
 - GitHub repository: [Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api)
 
-### 4. Solar System Java (3D Simulation)
+### 5. Solar System Java (3D Simulation)
 3D solar system simulation in Java with LWJGL/OpenGL.
 - **Technologies**: Java, LWJGL, OpenGL, JOML, Maven
 - 3D rendering with realistic textures, Saturn's rings, lunar orbit
 - Free camera, time control, ImGui interface
 - GitHub repository: [Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java)
 
-### 5. Cosmos Explorer
+### 6. Cosmos Explorer
 Educational website about the solar system.
 - **Technologies**: HTML5, CSS3, JavaScript, Animations
 - Immersive interface
@@ -156,7 +177,7 @@ Educational website about the solar system.
 - Dynamic time counter
 - Intuitive navigation
 
-### 6. Dominion Sign Group
+### 7. Dominion Sign Group
 Corporate website celebrating the company's 75 years of expertise.
 - **Technologies**: HTML5, CSS3, JavaScript, Responsive Design
 - Professional and elegant design
