@@ -111,7 +111,7 @@ Portfolio/
 > séparés, ils ne sont pas inclus ici. Des liens sont fournis dans la section
 > Projets du portfolio :
 > - **Migration Cloud-Native : Azure AKS & Terraform** ([Dunedude84/azure-aks-terraform-hey-hi](https://github.com/Dunedude84/azure-aks-terraform-hey-hi))
-> - **Horaires Pharmacie** (`hey-hi.ca`)
+> - **Horaires Pharmacie** ([hey-hi.ca](https://hey-hi.ca))
 > - **Guichet Automatique (WPF)** ([Dunedude84/atm-simulation](https://github.com/Dunedude84/atm-simulation))
 > - **API Discogs (Android)** ([Dunedude84/discogs-api](https://github.com/Dunedude84/discogs-api))
 > - **Solar System Java** ([Dunedude84/solar-system-java](https://github.com/Dunedude84/solar-system-java))
